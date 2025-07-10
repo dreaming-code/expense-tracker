@@ -1,1 +1,2 @@
 # expense-tracker
+SpendSense is your personal finance companion designed to bring clarity to your spending and confidence to your saving. It's an intuitive money tracker that allows you to effortlessly log your income and expenses, visualize your financial habits with interactive charts, and compare your spending against set budgets. With a clean, responsive design, SpendSense helps you stay on top of your financial goals, whether you're on your desktop or on the go.
