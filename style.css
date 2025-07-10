@@ -1,0 +1,1701 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 242, 245); /* Lighter background for modern feel */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hide Utility Class */
+.hide {
+    display: none !important;
+}
+
+/* Start Page Styles */
+.startpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url("p1.avif");
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text for better contrast */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.front {
+    /* Removed margin-right as content is now centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly more opaque overlay for better readability */
+    padding: 40px 30px; /* Increased padding for more breathing room */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    max-width: 500px; /* Added max-width to control size on large screens */
+    width: 90%; /* Responsive width */
+}
+
+.bg1 {
+    font-size: 4rem; /* Adjusted font size for better fit within centered box */
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.ty {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* Slightly smaller for better flow */
+    margin-bottom: 25px; /* Increased margin for separation */
+    max-width: 400px;
+}
+
+.b {
+    text-decoration: none;
+    height: 60px;
+    width: 200px; /* Slightly wider button */
+    font-size: 1.6rem; /* Slightly smaller font for button */
+    text-align: center;
+    border-radius: 30px;
+    background-color: #008080;
+    border: 2px solid #008080;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.b:hover {
+    background-color: #006666;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjusted shadow on hover */
+}
+
+.line2 {
+    margin-top: 25px; /* Increased margin for separation */
+    font-size: 0.95rem; /* Slightly smaller font */
+}
+
+.line2 a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.line2 a:hover {
+    color: #e0e0e0;
+}
+
+/* Login/Signup Pages */
+.login, .signup {
+    min-height: 100vh; /* Use min-height for flexible content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #436394;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.opq {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #008080; /* Teal background for form section */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-image: url("p35.jpg"); /* Placeholder for p.jpg */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 20px; /* Adjust padding */
+    box-sizing: border-box;
+}
+
+#form1, #form2 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    
+    max-width: 450px; /* Max width for forms */
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+#op2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #008080;
+    text-align: center;
+}
+
+.label1 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+.inp2 {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#sub {
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #008080;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#sub:hover {
+    background-color: #006666;
+}
+
+#sub a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#oj {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #008080;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    font-size: 1.5rem; /* Smaller font for better fit */
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav .fa-solid {
+    font-size: 1.4rem; /* Icon size */
+    margin-bottom: 4px;
+}
+
+.nav:hover {
+    color: #008080;
+    background-color: #f0f2f5;
+}
+
+.nav2 {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #008080;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Lift button above nav bar */
+}
+
+.nav2:hover {
+    background-color: #006666;
+    transform: scale(1.1);
+}
+
+.nav2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Edit Section */
+#edit {
+    padding-bottom: 80px; /* Space for fixed bottom nav */
+    background-color: rgb(240, 242, 245);
+}
+
+.main1 {
+    background-color: #008080;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.l1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.l11 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+}
+
+.l11 a:hover {
+    opacity: 0.8;
+}
+
+.l12 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.l2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.l13, .l14 {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ll34 {
+    background-color: white;
+    color: #008080;
+    font-weight: bold;
+}
+
+.l13:hover:not(.ll34), .l14:hover:not(.ll34) {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main2, .main3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.editing1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.editing1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ij {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #008080;
+    transition: all 0.3s ease;
+}
+
+.editing1:hover .ij {
+    border-color: #006666;
+    transform: scale(1.1);
+}
+
+.nameimage {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Calculator */
+.calc {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1100;
+    max-width: 400px; /* Limit calculator width */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#display, #note, #dates {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    color: #333;
+}
+
+#note, #dates {
+    text-align: left;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Flexible columns */
+    gap: 10px;
+}
+
+.buttons1, .buttons2 {
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.buttons1 {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.buttons1:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+.buttons2 {
+    background-color: #008080; /* Teal for submit */
+    color: white;
+}
+
+.buttons2:hover {
+    background-color: #006666;
+    transform: translateY(-2px);
+}
+
+.buttons2 a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Front Page (fp) */
+.frontpage {
+    background-color: #f0f2f5;
+    min-height: calc(100vh - 65px); /* Account for bottom nav */
+    padding-bottom: 80px; /* Space for fixed bottom nav */
+    box-sizing: border-box;
+}
+
+.first {
+    background-color: #008080;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#calender {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#realCalendar {
+    position: absolute;
+    width: 1px; /* Hide but keep functional */
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#calendarIcon {
+    width: 35px; /* Adjust icon size */
+    height: 35px;
+    cursor: pointer;
+    filter: invert(100%); /* Make calendar icon white */
+}
+
+.second {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate for rounded corners */
+    border-spacing: 0 10px; /* Space between rows */
+    font-size: 1rem;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    border-radius: 8px; /* Rounded corners for cells */
+    font-size: 2rem;
+}
+
+th {
+    background-color: #e0e0e0;
+    color: #555;
+    font-weight: 600;
+}
+
+.row2 {
+    background-color: #e6f7f7; /* Light teal for current month summary */
+    color: #333;
+    font-weight: bold;
+}
+
+#myDate {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+     font-weight: 600;
+    color: #333;
+}
+
+.third {
+    padding: 0 20px;
+    min-height: 200px; /* Minimum height for scrollable area */
+    max-height: calc(100vh - 350px); /* Adjust based on other elements */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.third::-webkit-scrollbar {
+    width: 8px;
+}
+
+.third::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.default {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.2rem;
+    color: #777;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+#miq {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Records */
+#expenseContainer {
+    margin-top: 10px;
+}
+
+[data-date] {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 8px solid #008080; /* Teal accent */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+[data-date]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+[data-date] h3 {
+    margin: 0 0 10px;
+    color: #008080;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+[data-date] ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+[data-date] li {
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px dashed #eee;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+[data-date] li:last-child {
+    border-bottom: none;
+}
+
+[data-date] li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+
+/* Profile Section */
+.profile {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 80px auto; /* Add bottom margin for nav */
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.ed {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column; /* Stack labels and inputs */
+    align-items: flex-start; /* Align text to left */
+    gap: 8px;
+}
+
+.ed1 {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.edinside {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.edinside:focus {
+    background-color: #fff;
+    border-color: #008080;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.2);
+}
+
+.edinside:read-only {
+    opacity: 0.7;
+    cursor: default;
+    background-color: #eee;
+}
+
+.edit1, .edit7 {
+    background-color: #008080;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit1:hover, .edit7:hover {
+    background-color: #006666;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Chart Section */
+#chart {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto 80px auto; /* Add bottom margin for nav */
+    max-width: 700px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.chart-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.chart-controls select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f7f7f7;
+    font-size: 1rem;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13%205.7L146.2%20200.6%2018.3%2075.1a17.6%2017.6%200%200%200-24.7%2024.7l130.4%20130.4c6.9%206.9%2017.6%206.9%2024.5%200l130.5-130.4a17.6%2017.6%200%200%200%200-24.7c-6.9-6.8-17.7-6.8-24.6%200z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    padding-right: 30px; /* Space for custom arrow */
+}
+
+#scrollSelect {
+    display: flex;
+    overflow-x: auto;
+    padding: 8px;
+    gap: 8px;
+    margin: 10px 0 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+#scrollSelect::-webkit-scrollbar {
+    height: 6px;
+}
+
+#scrollSelect::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.scroll-option {
+    flex: 0 0 auto;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #eee;
+    cursor: pointer;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+    user-select: none;
+}
+
+.scroll-option:hover {
+    background: #ddd;
+}
+
+.scroll-option.active {
+    background: #008080; /* Teal active state */
+    color: white;
+    font-weight: 600;
+}
+
+#summaryChart {
+    max-width: 300px; /* Slightly larger chart */
+    margin: 0 auto 20px;
+    display: block;
+}
+
+#summaryLegend {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.legend-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.legend-item:last-child {
+    border-bottom: none;
+}
+
+.legend-left {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    align-items: center;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Budget Report Section */
+#budgetReportSection {
+    padding: 30px 20px;
+    background: #fff;
+    max-width: 800px;
+    margin: 40px auto 80px auto; /* Add bottom margin for nav */
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.budget-report-header h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #008080;
+}
+
+.budget-report-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.budget-report-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.budget-report-controls label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.budget-report-controls select,
+.budget-report-controls input {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 140px; /* Adjust width */
+    box-sizing: border-box;
+    appearance: none; /* Remove default arrow for select */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13%205.7L146.2%20200.6%2018.3%2075.1a17.6%2017.6%200%200%200-24.7%2024.7l130.4%20130.4c6.9%206.9%2017.6%206.9%2024.5%200l130.5-130.4a17.6%2017.6%200%200%200%200-24.7c-6.9-6.8-17.7-6.8-24.6%200z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.budget-report-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #008080;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.budget-report-controls button:hover {
+    background-color: #006666;
+    transform: translateY(-2px);
+}
+
+.budget-report-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin: 10px 0 20px;
+    padding: 6px;
+    justify-content: center;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.budget-report-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.budget-report-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.budget-report-scroll .scroll-option {
+    flex: 0 0 auto;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #eee;
+    cursor: pointer;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+    user-select: none;
+}
+
+.budget-report-scroll .scroll-option:hover {
+    background: #ddd;
+}
+
+.budget-report-scroll .scroll-option.active {
+    background: #008080; /* Teal active state */
+    color: white;
+    font-weight: 600;
+}
+
+#budgetReportChartContainer {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+#budgetReportChart {
+    width: 100% !important;
+    height: auto !important;
+}
+
+#budgetReportCenterText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+    text-align: center;
+    width: 80%; /* Ensure text fits */
+}
+
+#budgetReportLegend {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .startpage {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .front {
+        margin-right: 0;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .bg1 {
+        font-size: 3rem; /* Adjusted from 3.5rem */
+    }
+
+    .ty {
+        font-size: 0.85rem; /* Adjusted from 0.9rem */
+    }
+
+    .b {
+        width: 150px; /* Adjusted from 160px */
+        height: 48px; /* Adjusted from 50px */
+        font-size: 1.4rem; /* Adjusted from 1.5rem */
+        margin-top: 20px;
+    }
+
+    #form1, #form2 {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    #op2 {
+        font-size: 2rem;
+    }
+
+    .label1 {
+        font-size: 1rem;
+    }
+
+    .inp2 {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #sub {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .bottom-nav {
+        height: 60px;
+    }
+
+    .nav {
+        font-size: 0.75rem;
+    }
+
+    .nav .fa-solid {
+        font-size: 1.2rem;
+    }
+
+    .nav2 {
+        height: 50px;
+        width: 50px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .main1 {
+        padding: 15px;
+    }
+
+    .l12 {
+        font-size: 1.8rem;
+    }
+
+    .l13, .l14 {
+        font-size: 1.1rem;
+        padding: 8px 15px;
+    }
+
+    .main2, .main3 {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .editing1 {
+        padding: 10px;
+    }
+
+    .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nameimage {
+        font-size: 0.8rem;
+    }
+
+    .calc {
+        padding: 15px;
+    }
+
+    #display, #note, #dates {
+        height: 45px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+
+    .buttons1, .buttons2 {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .first {
+        padding: 15px;
+    }
+
+    #name {
+        font-size: 1.8rem;
+    }
+
+    #calendarIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #myDate {
+        font-size: 0.9rem;
+    }
+
+    .third {
+        padding: 0 15px;
+    }
+
+    .default {
+        padding: 30px 15px;
+        font-size: 1rem;
+    }
+
+    [data-date] {
+        padding: 12px;
+        border-left-width: 6px;
+    }
+
+    [data-date] h3 {
+        font-size: 1rem;
+    }
+
+    [data-date] li {
+        font-size: 0.9rem;
+    }
+
+    .profile {
+        padding: 20px;
+        margin: 20px auto 80px auto;
+    }
+
+    .ed {
+        gap: 5px;
+    }
+
+    .ed1 {
+        font-size: 1rem;
+    }
+
+    .edinside {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .edit1, .edit7 {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    #chart {
+        padding: 15px;
+        margin: 20px auto 80px auto;
+    }
+
+    .chart-controls select {
+        padding: 6px 15px;
+        padding-right: 25px;
+        font-size: 0.9rem;
+    }
+
+    .scroll-option {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    #summaryChart {
+        max-width: 250px;
+    }
+
+    .legend-item {
+        font-size: 0.9rem;
+    }
+
+    #budgetReportSection {
+        padding: 20px;
+        margin: 20px auto 80px auto;
+    }
+
+    .budget-report-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .budget-report-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .budget-report-controls {
+        gap: 10px;
+    }
+
+    .budget-report-controls label {
+        font-size: 0.9rem;
+    }
+
+    .budget-report-controls select,
+    .budget-report-controls input {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+        width: 120px;
+    }
+
+    .budget-report-controls button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .budget-report-scroll .scroll-option {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    #budgetReportChartContainer {
+        max-width: 250px;
+    }
+
+    #budgetReportCenterText {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg1 {
+        font-size: 2rem; /* Adjusted from 2.5rem */
+    }
+
+    .ty {
+        font-size: 0.75rem; /* Adjusted from 0.8rem */
+    }
+
+    .b {
+        width: 130px; /* Adjusted from 140px */
+        height: 40px; /* Adjusted from 45px */
+        font-size: 1.2rem; /* Adjusted from 1.3rem */
+    }
+
+    #op2 {
+        font-size: 1.8rem;
+    }
+
+    .label1 {
+        font-size: 0.9rem;
+    }
+
+    .inp2 {
+        font-size: 0.85rem;
+    }
+
+    #sub {
+        font-size: 1.1rem;
+    }
+
+    .bottom-nav {
+        height: 55px;
+    }
+
+    .nav {
+        font-size: 0.7rem;
+    }
+
+    .nav .fa-solid {
+        font-size: 1.1rem;
+    }
+
+    .nav2 {
+        height: 45px;
+        width: 45px;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .l12 {
+        font-size: 1.5rem;
+    }
+
+    .l13, .l14 {
+        font-size: 1rem;
+        padding: 7px 12px;
+    }
+
+    .main2, .main3 {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .editing1 {
+        padding: 8px;
+    }
+
+    .image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nameimage {
+        font-size: 0.75rem;
+    }
+
+    .calc {
+        padding: 10px;
+    }
+
+    #display, #note, #dates {
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .buttons {
+        gap: 6px;
+    }
+
+    .buttons1, .buttons2 {
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+
+    #calendarIcon {
+        width: 25px;
+        height: 25px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .default {
+        padding: 20px 10px;
+        font-size: 0.9rem;
+    }
+
+    [data-date] {
+        padding: 10px;
+        border-left-width: 5px;
+    }
+
+    [data-date] h3 {
+        font-size: 0.9rem;
+    }
+
+    [data-date] li {
+        font-size: 0.85rem;
+    }
+
+    .profile {
+        padding: 15px;
+        margin: 15px auto 70px auto;
+    }
+
+    .ed1 {
+        font-size: 0.9rem;
+    }
+
+    .edinside {
+        padding: 7px 10px;
+        font-size: 0.85rem;
+    }
+
+    .edit1, .edit7 {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    #chart {
+        padding: 10px;
+        margin: 15px auto 70px auto;
+    }
+
+    .chart-controls select {
+        padding: 5px 10px;
+        padding-right: 20px;
+        font-size: 0.85rem;
+    }
+
+    .scroll-option {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    #summaryChart {
+        max-width: 200px;
+    }
+
+    .legend-item {
+        font-size: 0.85rem;
+    }
+
+    #budgetReportSection {
+        padding: 15px;
+        margin: 15px auto 70px auto;
+    }
+
+    .budget-report-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .budget-report-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .budget-report-controls {
+        gap: 8px;
+    }
+
+    .budget-report-controls label {
+        font-size: 0.85rem;
+    }
+
+    .budget-report-controls select,
+    .budget-report-controls input {
+        padding: 7px 8px;
+        font-size: 0.85rem;
+        width: 100px;
+    }
+
+    .budget-report-controls button {
+        padding: 7px 12px;
+        font-size: 0.85rem;
+    }
+
+    .budget-report-scroll .scroll-option {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    #budgetReportChartContainer {
+        max-width: 200px;
+    }
+
+    #budgetReportCenterText {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 360px) {
+    .front {
+        padding: 30px 20px; /* Slightly reduced padding */
+    }
+
+    .bg1 {
+        font-size: 2.2rem; /* Further reduced font size for very small screens */
+        margin-bottom: 15px;
+    }
+
+    .ty {
+        font-size: 0.7rem; /* Further reduced font size */
+        margin-bottom: 20px;
+    }
+
+    .b {
+        width: 120px; /* Smaller button width */
+        height: 38px; /* Smaller button height */
+        font-size: 1rem; /* Smaller button font size */
+        margin-top: 15px;
+    }
+
+    #form1, #form2 {
+        padding: 15px;
+    }
+
+    #op2 {
+        font-size: 1.5rem;
+    }
+
+    .label1 {
+        font-size: 0.85rem;
+    }
+
+    .inp2 {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    #sub {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .bottom-nav {
+        height: 50px;
+    }
+
+    .nav {
+        font-size: 0.65rem;
+    }
+
+    .nav .fa-solid {
+        font-size: 1rem;
+    }
+
+    .nav2 {
+        height: 40px;
+        width: 40px;
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .main1 {
+        padding: 10px;
+    }
+
+    .l12 {
+        font-size: 1.3rem;
+    }
+
+    .l13, .l14 {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .main2, .main3 {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* Smaller grid items */
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .editing1 {
+        padding: 6px;
+    }
+
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nameimage {
+        font-size: 0.7rem;
+    }
+
+    .calc {
+        padding: 8px;
+    }
+
+    #display, #note, #dates {
+        height: 35px;
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    .buttons1, .buttons2 {
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    #name {
+        font-size: 1.3rem;
+    }
+.first{
+    width: 100%;
+}
+    #calendarIcon {
+        width: 22px;
+        height: 22px;
+    }
+#myDate{
+    font-size: .6rem;
+}
+    th, td {
+        padding: 6px;
+        font-size: 0.6rem;
+    }
+
+    .default {
+        padding: 15px 8px;
+        font-size: 0.85rem;
+    }
+
+    [data-date] {
+        padding: 8px;
+        border-left-width: 4px;
+    }
+
+    [data-date] h3 {
+        font-size: 0.85rem;
+    }
+
+    [data-date] li {
+        font-size: 0.8rem;
+    }
+
+    .profile {
+        padding: 10px;
+        margin: 10px auto 60px auto;
+    }
+
+    .ed1 {
+        font-size: 0.85rem;
+    }
+
+    .edinside {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .edit1, .edit7 {
+        padding: 7px 12px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+    }
+
+    #chart {
+        padding: 8px;
+        margin: 10px auto 60px auto;
+    }
+
+    .chart-controls select {
+        padding: 4px 8px;
+        padding-right: 22px;
+        font-size: 0.8rem;
+    }
+
+    .scroll-option {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    #summaryChart {
+        max-width: 180px;
+    }
+
+    .legend-item {
+        font-size: 0.8rem;
+    }
+
+    #budgetReportSection {
+        padding: 10px;
+        margin: 10px auto 60px auto;
+    }
+
+    .budget-report-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .budget-report-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .budget-report-controls {
+        gap: 6px;
+    }
+
+    .budget-report-controls label {
+        font-size: 0.8rem;
+    }
+
+    .budget-report-controls select,
+    .budget-report-controls input {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+        width: 90px;
+    }
+
+    .budget-report-controls button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .budget-report-scroll .scroll-option {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    #budgetReportChartContainer {
+        max-width: 180px;
+    }
+
+    #budgetReportCenterText {
+        font-size: 0.85rem;
+    }
+}
